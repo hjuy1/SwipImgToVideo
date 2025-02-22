@@ -1,12 +1,11 @@
 // #![allow(unused)]
 pub mod error;
-mod parse_data;
 mod prelude;
 pub mod swiping_img;
 
 use error::{Kind, Result};
 use std::{fs::File, path::Path};
-use swiping_img::{BigImg, Chunk};
+use swiping_img::BigImg;
 
 fn read_json<P, T>(file: P) -> Result<Vec<T>>
 where
@@ -26,12 +25,13 @@ fn main() -> Result<()> {
 
     let data_use = &read_json(data_file)?[..100];
 
-    let si = BigImg::builder(work_dir, &data_use)
-        .step(60)
-        .video_swip_speed(4)
-        .build()?;
-    // dbg!(&si);
-    si.combain("result.mp4").unwrap();
+    let si = BigImg::new(work_dir, &data_use);
+    // let si = BigImg::builder(work_dir, &data_use)
+    //     .step(60)
+    //     .video_swip_speed(4)
+    //     .build()?;
+    dbg!(&si);
+    si.combain("result.mp4")?;
 
     println!("cost {} ms", t.elapsed().as_millis());
     Ok(())
