@@ -1,0 +1,2360 @@
+[
+  {
+    "pic_path": "E:\\pictures\\foot_output\\极光_skin1_crop.png",
+    "text_up": [
+      "1"
+    ],
+    "text_down": [
+      "星级: 5"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\医生_skin1_crop.png",
+    "text_up": [
+      "2"
+    ],
+    "text_down": [
+      "生日: 09月16日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\可颂_skin1_crop.png",
+    "text_up": [
+      "3"
+    ],
+    "text_down": [
+      "身高: 163cm"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\末药_2_crop.png",
+    "text_up": [
+      "4"
+    ],
+    "text_down": [
+      "tag: 治疗"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\红豆_1_crop.png",
+    "text_up": [
+      "5"
+    ],
+    "text_down": [
+      "身高: 142cm"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\德克萨斯_skin2_crop.png",
+    "text_up": [
+      "6"
+    ],
+    "text_down": [
+      "生理耐受: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\锡人_2_crop.png",
+    "text_up": [
+      "7"
+    ],
+    "text_down": [
+      "星级: 5"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\凛冬_skin2_crop.png",
+    "text_up": [
+      "8"
+    ],
+    "text_down": [
+      "生日: 07月29日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\伊桑_skin1_crop.png",
+    "text_up": [
+      "9"
+    ],
+    "text_down": [
+      "战场机动: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\跃跃_1_crop.png",
+    "text_up": [
+      "10"
+    ],
+    "text_down": [
+      "感染状态: 感染者"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\罗小黑_2_crop.png",
+    "text_up": [
+      "11"
+    ],
+    "text_down": [
+      "位置: 近战位"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\莱欧斯_2_crop.png",
+    "text_up": [
+      "12"
+    ],
+    "text_down": [
+      "源石技艺适应性: ■■"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\芬_1_crop.png",
+    "text_up": [
+      "13"
+    ],
+    "text_down": [
+      "种族: 库兰塔"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\刻俄柏_skin2_crop.png",
+    "text_up": [
+      "14"
+    ],
+    "text_down": [
+      "战场机动: 优良"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\特克诺_1_crop.png",
+    "text_up": [
+      "15"
+    ],
+    "text_down": [
+      "性别: 女"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\苍苔_skin1_crop.png",
+    "text_up": [
+      "16"
+    ],
+    "text_down": [
+      "战场机动: 普通"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\安比尔_1_crop.png",
+    "text_up": [
+      "17"
+    ],
+    "text_down": [
+      "物理强度: 普通"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\凛冬_skin1_crop.png",
+    "text_up": [
+      "18"
+    ],
+    "text_down": [
+      "生日: 07月29日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\寻澜_2_crop.png",
+    "text_up": [
+      "19"
+    ],
+    "text_down": [
+      "出生地: 哥伦比亚"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\灰烬_skin1_crop.png",
+    "text_up": [
+      "20"
+    ],
+    "text_down": [
+      "性别: 女"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\狮蝎_skin2_crop.png",
+    "text_up": [
+      "21"
+    ],
+    "text_down": [
+      "种族: 曼提柯"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\崖心_1_crop.png",
+    "text_up": [
+      "22"
+    ],
+    "text_down": [
+      "战斗经验: 半年"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\褐果_skin1_crop.png",
+    "text_up": [
+      "23"
+    ],
+    "text_down": [
+      "职业: 医疗"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\伺夜_skin1_crop.png",
+    "text_up": [
+      "24"
+    ],
+    "text_down": [
+      "战斗经验: 八年"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\松果_1_crop.png",
+    "text_up": [
+      "25"
+    ],
+    "text_down": [
+      "战斗技巧: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\号角_skin1_crop.png",
+    "text_up": [
+      "26"
+    ],
+    "text_down": [
+      "性别: 女"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\调香师_skin2_crop.png",
+    "text_up": [
+      "27"
+    ],
+    "text_down": [
+      "战斗经验: 一年"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\极境_1_crop.png",
+    "text_up": [
+      "28"
+    ],
+    "text_down": [
+      "源石技艺适应性: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\蜜莓_1_crop.png",
+    "text_up": [
+      "29"
+    ],
+    "text_down": [
+      "星级: 5"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\斥罪_skin2_crop.png",
+    "text_up": [
+      "30"
+    ],
+    "text_down": [
+      "源石技艺适应性: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\隐现_2_crop.png",
+    "text_up": [
+      "31"
+    ],
+    "text_down": [
+      "种族: 萨科塔"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\断崖_skin1_crop.png",
+    "text_up": [
+      "32"
+    ],
+    "text_down": [
+      "星级: 5"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\海沫_skin1_crop.png",
+    "text_up": [
+      "33"
+    ],
+    "text_down": [
+      "tag: 输出"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\医生_1_crop.png",
+    "text_up": [
+      "34"
+    ],
+    "text_down": [
+      "生日: 09月16日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\砾_2_crop.png",
+    "text_up": [
+      "35"
+    ],
+    "text_down": [
+      "位置: 近战位"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\翎羽_skin1_crop.png",
+    "text_up": [
+      "36"
+    ],
+    "text_down": [
+      "tag: 输出 费用回复"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\梅尔_skin1_crop.png",
+    "text_up": [
+      "37"
+    ],
+    "text_down": [
+      "性别: 女"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\夜半_skin1_crop.png",
+    "text_up": [
+      "38"
+    ],
+    "text_down": [
+      "职业: 先锋"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\异客_skin1_crop.png",
+    "text_up": [
+      "39"
+    ],
+    "text_down": [
+      "生理耐受: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\梅_1_crop.png",
+    "text_up": [
+      "40"
+    ],
+    "text_down": [
+      "性别: 女"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\风笛_skin2_crop.png",
+    "text_up": [
+      "41"
+    ],
+    "text_down": [
+      "战术规划: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\玫拉_1_crop.png",
+    "text_up": [
+      "42"
+    ],
+    "text_down": [
+      "身高: 155cm"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\假日威龙陈_skin1_crop.png",
+    "text_up": [
+      "43"
+    ],
+    "text_down": [
+      "物理强度: 优良"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\隐德来希_2_crop.png",
+    "text_up": [
+      "44"
+    ],
+    "text_down": [
+      "性别: 女"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\雷蛇_1_crop.png",
+    "text_up": [
+      "45"
+    ],
+    "text_down": [
+      "职业: 重装"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\白金_1_crop.png",
+    "text_up": [
+      "46"
+    ],
+    "text_down": [
+      "身高: 160cm"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\暴行_1_crop.png",
+    "text_up": [
+      "47"
+    ],
+    "text_down": [
+      "性别: 女"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\寒檀_skin1_crop.png",
+    "text_up": [
+      "48"
+    ],
+    "text_down": [
+      "出生地: 萨米"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\濯尘芙蓉_2_crop.png",
+    "text_up": [
+      "49"
+    ],
+    "text_down": [
+      "出生地: 维多利亚"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\林_skin1_crop.png",
+    "text_up": [
+      "50"
+    ],
+    "text_down": [
+      "感染状态: 非感染者"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\伊桑_1_crop.png",
+    "text_up": [
+      "51"
+    ],
+    "text_down": [
+      "战场机动: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\斯卡蒂_skin2_crop.png",
+    "text_up": [
+      "52"
+    ],
+    "text_down": [
+      "物理强度: ■■"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\杰克_skin1_crop.png",
+    "text_up": [
+      "53"
+    ],
+    "text_down": [
+      "物理强度: 优良"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\纯烬艾雅法拉_2_crop.png",
+    "text_up": [
+      "54"
+    ],
+    "text_down": [
+      "生理耐受: 缺陷"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\苏苏洛_skin1_crop.png",
+    "text_up": [
+      "55"
+    ],
+    "text_down": [
+      "tag: 治疗"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\摩根_1_crop.png",
+    "text_up": [
+      "56"
+    ],
+    "text_down": [
+      "位置: 近战位"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\送葬人_1_crop.png",
+    "text_up": [
+      "57"
+    ],
+    "text_down": [
+      "战术规划: 优良"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\维什戴尔_1_crop.png",
+    "text_up": [
+      "58"
+    ],
+    "text_down": [
+      "生理耐受: 优良"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\战车_1_crop.png",
+    "text_up": [
+      "59"
+    ],
+    "text_down": [
+      "分支职业: 剑豪"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\能天使_skin3_crop.png",
+    "text_up": [
+      "60"
+    ],
+    "text_down": [
+      "感染状态: 非感染者"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\棘刺_skin2_crop.png",
+    "text_up": [
+      "61"
+    ],
+    "text_down": [
+      "星级: 6"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\因陀罗_2_crop.png",
+    "text_up": [
+      "62"
+    ],
+    "text_down": [
+      "星级: 5"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\薄绿_2_crop.png",
+    "text_up": [
+      "63"
+    ],
+    "text_down": [
+      "出生地: 维多利亚"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\卡涅利安_skin2_crop.png",
+    "text_up": [
+      "64"
+    ],
+    "text_down": [
+      "战斗技巧: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\苍苔_1_crop.png",
+    "text_up": [
+      "65"
+    ],
+    "text_down": [
+      "战场机动: 普通"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\芙兰卡_skin1_crop.png",
+    "text_up": [
+      "66"
+    ],
+    "text_down": [
+      "感染状态: 感染者"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\桃金娘_skin2_crop.png",
+    "text_up": [
+      "67"
+    ],
+    "text_down": [
+      "星级: 4"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\圣约送葬人_skin1_crop.png",
+    "text_up": [
+      "68"
+    ],
+    "text_down": [
+      "生理耐受: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\星极_1_crop.png",
+    "text_up": [
+      "69"
+    ],
+    "text_down": [
+      "星级: 5"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\史都华德_1_crop.png",
+    "text_up": [
+      "70"
+    ],
+    "text_down": [
+      "tag: 输出"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\白面鸮_skin1_crop.png",
+    "text_up": [
+      "71"
+    ],
+    "text_down": [
+      "生日: 10月06日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\斑点_skin2_crop.png",
+    "text_up": [
+      "72"
+    ],
+    "text_down": [
+      "战斗技巧: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\陨星_skin1_crop.png",
+    "text_up": [
+      "73"
+    ],
+    "text_down": [
+      "出生地: 卡兹戴尔"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\霜华_2_crop.png",
+    "text_up": [
+      "74"
+    ],
+    "text_down": [
+      "战场机动: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\坚雷_1_crop.png",
+    "text_up": [
+      "75"
+    ],
+    "text_down": [
+      "战斗经验: 八年"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\亚叶_2_crop.png",
+    "text_up": [
+      "76"
+    ],
+    "text_down": [
+      "出生地: 乌萨斯"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\安洁莉娜_skin1_crop.png",
+    "text_up": [
+      "77"
+    ],
+    "text_down": [
+      "上线日期: 2019.04.30"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\安比尔_2_crop.png",
+    "text_up": [
+      "78"
+    ],
+    "text_down": [
+      "物理强度: 普通"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\格雷伊_1_crop.png",
+    "text_up": [
+      "79"
+    ],
+    "text_down": [
+      "战术规划: 普通"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\洋灰_skin1_crop.png",
+    "text_up": [
+      "80"
+    ],
+    "text_down": [
+      "生日: 10月25日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\夜半_skin2_crop.png",
+    "text_up": [
+      "81"
+    ],
+    "text_down": [
+      "职业: 先锋"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\讯使_skin1_crop.png",
+    "text_up": [
+      "82"
+    ],
+    "text_down": [
+      "tag: 费用回复 防护"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\天火_skin1_crop.png",
+    "text_up": [
+      "83"
+    ],
+    "text_down": [
+      "种族: 菲林"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\月禾_skin2_crop.png",
+    "text_up": [
+      "84"
+    ],
+    "text_down": [
+      "战斗经验: 两年"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\霍尔海雅_2_crop.png",
+    "text_up": [
+      "85"
+    ],
+    "text_down": [
+      "tag: 输出 控场"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\熔泉_1_crop.png",
+    "text_up": [
+      "86"
+    ],
+    "text_down": [
+      "物理强度: 优良"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\刺玫_2_crop.png",
+    "text_up": [
+      "87"
+    ],
+    "text_down": [
+      "职业: 医疗"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\露托_2_crop.png",
+    "text_up": [
+      "88"
+    ],
+    "text_down": [
+      "职业: 重装"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\暗索_skin1 V1_crop.png",
+    "text_up": [
+      "89"
+    ],
+    "text_down": [
+      "战场机动: 优良"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\琳琅诗怀雅_2_crop.png",
+    "text_up": [
+      "90"
+    ],
+    "text_down": [
+      "职业: 特种"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\战车_skin1_crop.png",
+    "text_up": [
+      "91"
+    ],
+    "text_down": [
+      "分支职业: 剑豪"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\弑君者_1_crop.png",
+    "text_up": [
+      "92"
+    ],
+    "text_down": [
+      "生理耐受: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\夜半_2_crop.png",
+    "text_up": [
+      "93"
+    ],
+    "text_down": [
+      "职业: 先锋"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\深律_skin1_crop.png",
+    "text_up": [
+      "94"
+    ],
+    "text_down": [
+      "种族: 鲁珀"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\伊芙利特_skin1_crop.png",
+    "text_up": [
+      "95"
+    ],
+    "text_down": [
+      "生日: 07月22日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\图耶_2_crop.png",
+    "text_up": [
+      "96"
+    ],
+    "text_down": [
+      "生理耐受: 普通"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\真理_1_crop.png",
+    "text_up": [
+      "97"
+    ],
+    "text_down": [
+      "物理强度: 普通"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\澄闪_1_crop.png",
+    "text_up": [
+      "98"
+    ],
+    "text_down": [
+      "生日: 01月07日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\凯尔希_1_crop.png",
+    "text_up": [
+      "99"
+    ],
+    "text_down": [
+      "物理强度: 普通"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\食铁兽_2_crop.png",
+    "text_up": [
+      "100"
+    ],
+    "text_down": [
+      "物理强度: 优良"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\嵯峨_skin1_crop.png",
+    "text_up": [
+      "101"
+    ],
+    "text_down": [
+      "分支职业: 尖兵"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\诗怀雅_2_crop.png",
+    "text_up": [
+      "102"
+    ],
+    "text_down": [
+      "战斗经验: 三年"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\清流_1_crop.png",
+    "text_up": [
+      "103"
+    ],
+    "text_down": [
+      "位置: 远程位"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\推进之王_skin2_crop.png",
+    "text_up": [
+      "104"
+    ],
+    "text_down": [
+      "生日: 07月10日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\烈夏_2_crop.png",
+    "text_up": [
+      "105"
+    ],
+    "text_down": [
+      "星级: 5"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\炎狱炎熔_skin1_crop.png",
+    "text_up": [
+      "106"
+    ],
+    "text_down": [
+      "感染状态: 感染者"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\夜莺_skin1_crop.png",
+    "text_up": [
+      "107"
+    ],
+    "text_down": [
+      "战术规划: 普通"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\铸铁_skin1_crop.png",
+    "text_up": [
+      "108"
+    ],
+    "text_down": [
+      "战术规划: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\铃兰_skin2_crop.png",
+    "text_up": [
+      "109"
+    ],
+    "text_down": [
+      "生日: 10月09日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\薇薇安娜_skin1_crop.png",
+    "text_up": [
+      "110"
+    ],
+    "text_down": [
+      "星级: 6"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\晓歌_2_crop.png",
+    "text_up": [
+      "111"
+    ],
+    "text_down": [
+      "战术规划: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\见行者_skin1_crop.png",
+    "text_up": [
+      "112"
+    ],
+    "text_down": [
+      "战场机动: 优良"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\暗索_1_crop.png",
+    "text_up": [
+      "113"
+    ],
+    "text_down": [
+      "战场机动: 优良"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\松果_skin2_crop.png",
+    "text_up": [
+      "114"
+    ],
+    "text_down": [
+      "战斗技巧: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\双月_skin1_crop.png",
+    "text_up": [
+      "115"
+    ],
+    "text_down": [
+      "分支职业: 傀儡师"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\莎草_1_crop.png",
+    "text_up": [
+      "116"
+    ],
+    "text_down": [
+      "出生地: 萨尔贡"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\陈_skin1_crop.png",
+    "text_up": [
+      "117"
+    ],
+    "text_down": [
+      "身高: 168cm"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\幽灵鲨_skin1_crop.png",
+    "text_up": [
+      "118"
+    ],
+    "text_down": [
+      "职业: 近卫"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\宴_skin2_crop.png",
+    "text_up": [
+      "119"
+    ],
+    "text_down": [
+      "职业: 近卫"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\泡泡_1_crop.png",
+    "text_up": [
+      "120"
+    ],
+    "text_down": [
+      "生理耐受: 优良"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\提丰_skin2_crop.png",
+    "text_up": [
+      "121"
+    ],
+    "text_down": [
+      "分支职业: 攻城手"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\赤冬_skin1_crop.png",
+    "text_up": [
+      "122"
+    ],
+    "text_down": [
+      "战斗经验: 八年"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\莱欧斯_1_crop.png",
+    "text_up": [
+      "123"
+    ],
+    "text_down": [
+      "源石技艺适应性: ■■"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\子月_1_crop.png",
+    "text_up": [
+      "124"
+    ],
+    "text_down": [
+      "生日: 10月03日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\泥岩_skin2_crop.png",
+    "text_up": [
+      "125"
+    ],
+    "text_down": [
+      "出生地: 卡兹戴尔"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\慕斯_skin1_crop.png",
+    "text_up": [
+      "126"
+    ],
+    "text_down": [
+      "生日: 08月19日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\玫拉_skin1_crop.png",
+    "text_up": [
+      "127"
+    ],
+    "text_down": [
+      "身高: 155cm"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\苍苔_2_crop.png",
+    "text_up": [
+      "128"
+    ],
+    "text_down": [
+      "战场机动: 普通"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\龙舌兰_skin1_crop.png",
+    "text_up": [
+      "129"
+    ],
+    "text_down": [
+      "位置: 近战位"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\灰毫_skin1_crop.png",
+    "text_up": [
+      "130"
+    ],
+    "text_down": [
+      "生理耐受: 优良"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\寒芒克洛丝_skin2_crop.png",
+    "text_up": [
+      "131"
+    ],
+    "text_down": [
+      "战术规划: 优良"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\雷蛇_skin1_crop.png",
+    "text_up": [
+      "132"
+    ],
+    "text_down": [
+      "职业: 重装"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\月禾_2_crop.png",
+    "text_up": [
+      "133"
+    ],
+    "text_down": [
+      "战斗经验: 两年"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\铃兰_skin1_crop.png",
+    "text_up": [
+      "134"
+    ],
+    "text_down": [
+      "生日: 10月09日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\仇白_skin2_crop.png",
+    "text_up": [
+      "135"
+    ],
+    "text_down": [
+      "战术规划: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\玛恩纳_2_crop.png",
+    "text_up": [
+      "136"
+    ],
+    "text_down": [
+      "分支职业: 解放者"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\白铁_2_crop.png",
+    "text_up": [
+      "137"
+    ],
+    "text_down": [
+      "上线日期: 2022.10.11"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\炎狱炎熔_1_crop.png",
+    "text_up": [
+      "138"
+    ],
+    "text_down": [
+      "感染状态: 感染者"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\安哲拉_skin1_crop.png",
+    "text_up": [
+      "139"
+    ],
+    "text_down": [
+      "战斗技巧: 优良"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\棘刺_skin1_crop.png",
+    "text_up": [
+      "140"
+    ],
+    "text_down": [
+      "星级: 6"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\铃兰_1_crop.png",
+    "text_up": [
+      "141"
+    ],
+    "text_down": [
+      "生日: 10月09日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\星源_skin1_crop.png",
+    "text_up": [
+      "142"
+    ],
+    "text_down": [
+      "战术规划: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\红_2_crop.png",
+    "text_up": [
+      "143"
+    ],
+    "text_down": [
+      "位置: 近战位"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\灵知_skin1_crop.png",
+    "text_up": [
+      "144"
+    ],
+    "text_down": [
+      "战斗技巧: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\夜莺_1_crop.png",
+    "text_up": [
+      "145"
+    ],
+    "text_down": [
+      "战术规划: 普通"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\乌有_2_crop.png",
+    "text_up": [
+      "146"
+    ],
+    "text_down": [
+      "感染状态: 非感染者"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\流星_skin2_crop.png",
+    "text_up": [
+      "147"
+    ],
+    "text_down": [
+      "tag: 输出 削弱"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\雪雉_1_crop.png",
+    "text_up": [
+      "148"
+    ],
+    "text_down": [
+      "出生地: 龙门"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\梓兰_1_crop.png",
+    "text_up": [
+      "149"
+    ],
+    "text_down": [
+      "感染状态: 感染者"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\可颂_2_crop.png",
+    "text_up": [
+      "150"
+    ],
+    "text_down": [
+      "身高: 163cm"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\斑点_1_crop.png",
+    "text_up": [
+      "151"
+    ],
+    "text_down": [
+      "战斗技巧: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\琴柳_1_crop.png",
+    "text_up": [
+      "152"
+    ],
+    "text_down": [
+      "生日: 05月31日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\桃金娘_1_crop.png",
+    "text_up": [
+      "153"
+    ],
+    "text_down": [
+      "星级: 4"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\白铁_skin1_crop.png",
+    "text_up": [
+      "154"
+    ],
+    "text_down": [
+      "上线日期: 2022.10.11"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\夜魔_1_crop.png",
+    "text_up": [
+      "155"
+    ],
+    "text_down": [
+      "生理耐受: 普通"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\霜叶_skin1_crop.png",
+    "text_up": [
+      "156"
+    ],
+    "text_down": [
+      "上线日期: 2019.04.30"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\流明_2_crop.png",
+    "text_up": [
+      "157"
+    ],
+    "text_down": [
+      "出生地: 伊比利亚"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\格劳克斯_1_crop.png",
+    "text_up": [
+      "158"
+    ],
+    "text_down": [
+      "身高: 159cm"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\巫恋_1_crop.png",
+    "text_up": [
+      "159"
+    ],
+    "text_down": [
+      "性别: 女"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\地灵_skin1_crop.png",
+    "text_up": [
+      "160"
+    ],
+    "text_down": [
+      "种族: 卡普里尼"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\棘刺_2_crop.png",
+    "text_up": [
+      "161"
+    ],
+    "text_down": [
+      "星级: 6"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\衡沙_2_crop.png",
+    "text_up": [
+      "162"
+    ],
+    "text_down": [
+      "性别: 男"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\伊桑_2_crop.png",
+    "text_up": [
+      "163"
+    ],
+    "text_down": [
+      "战场机动: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\琳琅诗怀雅_skin1_crop.png",
+    "text_up": [
+      "164"
+    ],
+    "text_down": [
+      "职业: 特种"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\霜叶_1_crop.png",
+    "text_up": [
+      "165"
+    ],
+    "text_down": [
+      "上线日期: 2019.04.30"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\琳琅诗怀雅_1_crop.png",
+    "text_up": [
+      "166"
+    ],
+    "text_down": [
+      "职业: 特种"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\特米米_2_crop.png",
+    "text_up": [
+      "167"
+    ],
+    "text_down": [
+      "种族: 阿达克利斯"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\陈_skin2_crop.png",
+    "text_up": [
+      "168"
+    ],
+    "text_down": [
+      "身高: 168cm"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\齐尔查克_1_crop.png",
+    "text_up": [
+      "169"
+    ],
+    "text_down": [
+      "上线日期: 2024.09.02"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\止颂_skin1_crop.png",
+    "text_up": [
+      "170"
+    ],
+    "text_down": [
+      "感染状态: 非感染者"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\桃金娘_2_crop.png",
+    "text_up": [
+      "171"
+    ],
+    "text_down": [
+      "星级: 4"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\图耶_skin1_crop.png",
+    "text_up": [
+      "172"
+    ],
+    "text_down": [
+      "生理耐受: 普通"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\布洛卡_skin1_crop.png",
+    "text_up": [
+      "173"
+    ],
+    "text_down": [
+      "位置: 近战位"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\风丸_2_crop.png",
+    "text_up": [
+      "174"
+    ],
+    "text_down": [
+      "战场机动: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\玫拉_2_crop.png",
+    "text_up": [
+      "175"
+    ],
+    "text_down": [
+      "身高: 155cm"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\令_skin2_crop.png",
+    "text_up": [
+      "176"
+    ],
+    "text_down": [
+      "职业: 辅助"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\因陀罗_skin1_crop.png",
+    "text_up": [
+      "177"
+    ],
+    "text_down": [
+      "星级: 5"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\红_skin1_crop.png",
+    "text_up": [
+      "178"
+    ],
+    "text_down": [
+      "位置: 近战位"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\安赛尔_skin1_crop.png",
+    "text_up": [
+      "179"
+    ],
+    "text_down": [
+      "生日: 01月31日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\推进之王_2_crop.png",
+    "text_up": [
+      "180"
+    ],
+    "text_down": [
+      "生日: 07月10日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\空构_2_crop.png",
+    "text_up": [
+      "181"
+    ],
+    "text_down": [
+      "战术规划: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\猎蜂_skin1_crop.png",
+    "text_up": [
+      "182"
+    ],
+    "text_down": [
+      "战术规划: 普通"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\石英_skin1_crop.png",
+    "text_up": [
+      "183"
+    ],
+    "text_down": [
+      "身高: 173cm"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\莫斯提马_1_crop.png",
+    "text_up": [
+      "184"
+    ],
+    "text_down": [
+      "性别: 女"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\能天使_2_crop.png",
+    "text_up": [
+      "185"
+    ],
+    "text_down": [
+      "感染状态: 非感染者"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\假日威龙陈_2_crop.png",
+    "text_up": [
+      "186"
+    ],
+    "text_down": [
+      "物理强度: 优良"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\天火_1_crop.png",
+    "text_up": [
+      "187"
+    ],
+    "text_down": [
+      "种族: 菲林"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\绮良_2_crop.png",
+    "text_up": [
+      "188"
+    ],
+    "text_down": [
+      "战斗技巧: 普通"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\天火_2_crop.png",
+    "text_up": [
+      "189"
+    ],
+    "text_down": [
+      "种族: 菲林"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\蜜莓_2_crop.png",
+    "text_up": [
+      "190"
+    ],
+    "text_down": [
+      "星级: 5"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\缄默德克萨斯_skin1_crop.png",
+    "text_up": [
+      "191"
+    ],
+    "text_down": [
+      "战斗技巧: 优良"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\暮落_skin1_crop.png",
+    "text_up": [
+      "192"
+    ],
+    "text_down": [
+      "生理耐受: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\深靛_skin1_crop.png",
+    "text_up": [
+      "193"
+    ],
+    "text_down": [
+      "源石技艺适应性: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\燧石_2_crop.png",
+    "text_up": [
+      "194"
+    ],
+    "text_down": [
+      "位置: 近战位"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\亚叶_1_crop.png",
+    "text_up": [
+      "195"
+    ],
+    "text_down": [
+      "出生地: 乌萨斯"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\令_1_crop.png",
+    "text_up": [
+      "196"
+    ],
+    "text_down": [
+      "职业: 辅助"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\玛露西尔_1_crop.png",
+    "text_up": [
+      "197"
+    ],
+    "text_down": [
+      "分支职业: 扩散术师"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\孑_2_crop.png",
+    "text_up": [
+      "198"
+    ],
+    "text_down": [
+      "物理强度: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\爱丽丝_skin1_crop.png",
+    "text_up": [
+      "199"
+    ],
+    "text_down": [
+      "tag: 输出"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\桃金娘_skin1_crop.png",
+    "text_up": [
+      "200"
+    ],
+    "text_down": [
+      "星级: 4"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\暗索_2_crop.png",
+    "text_up": [
+      "201"
+    ],
+    "text_down": [
+      "战场机动: 优良"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\风笛_skin3_crop.png",
+    "text_up": [
+      "202"
+    ],
+    "text_down": [
+      "战术规划: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\炎客_skin2_crop.png",
+    "text_up": [
+      "203"
+    ],
+    "text_down": [
+      "性别: 男"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\蓝毒_skin1_crop.png",
+    "text_up": [
+      "204"
+    ],
+    "text_down": [
+      "战斗技巧: 优良"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\塞雷娅_skin2_crop.png",
+    "text_up": [
+      "205"
+    ],
+    "text_down": [
+      "职业: 重装"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\洛洛_skin1_crop.png",
+    "text_up": [
+      "206"
+    ],
+    "text_down": [
+      "源石技艺适应性: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\艾雅法拉_skin1_crop.png",
+    "text_up": [
+      "207"
+    ],
+    "text_down": [
+      "物理强度: 普通"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\苏苏洛_2_crop.png",
+    "text_up": [
+      "208"
+    ],
+    "text_down": [
+      "tag: 治疗"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\能天使_skin2_crop.png",
+    "text_up": [
+      "209"
+    ],
+    "text_down": [
+      "感染状态: 非感染者"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\泡普卡_skin1_crop.png",
+    "text_up": [
+      "210"
+    ],
+    "text_down": [
+      "战斗技巧: 普通"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\哈洛德_skin1_crop.png",
+    "text_up": [
+      "211"
+    ],
+    "text_down": [
+      "tag: 治疗"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\芳汀_skin1_crop.png",
+    "text_up": [
+      "212"
+    ],
+    "text_down": [
+      "物理强度: 普通"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\伊芙利特_1 V1_crop.png",
+    "text_up": [
+      "213"
+    ],
+    "text_down": [
+      "生日: 07月22日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\夕_skin1_crop.png",
+    "text_up": [
+      "214"
+    ],
+    "text_down": [
+      "生日: 11月11日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\絮雨_1_crop.png",
+    "text_up": [
+      "215"
+    ],
+    "text_down": [
+      "身高: 169cm"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\刻刀_1_crop.png",
+    "text_up": [
+      "216"
+    ],
+    "text_down": [
+      "源石技艺适应性: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\小满_1_crop.png",
+    "text_up": [
+      "217"
+    ],
+    "text_down": [
+      "分支职业: 凝滞师"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\极境_skin1_crop.png",
+    "text_up": [
+      "218"
+    ],
+    "text_down": [
+      "源石技艺适应性: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\清流_2_crop.png",
+    "text_up": [
+      "219"
+    ],
+    "text_down": [
+      "位置: 远程位"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\米格鲁_skin1_crop.png",
+    "text_up": [
+      "220"
+    ],
+    "text_down": [
+      "上线日期: 2019.04.30"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\芙蓉_1_crop.png",
+    "text_up": [
+      "221"
+    ],
+    "text_down": [
+      "生日: 06月21日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\万顷_2_crop.png",
+    "text_up": [
+      "222"
+    ],
+    "text_down": [
+      "种族: 丰蹄"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\掠风_2_crop.png",
+    "text_up": [
+      "223"
+    ],
+    "text_down": [
+      "上线日期: 2022.05.01"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\锡兰_skin1_crop.png",
+    "text_up": [
+      "224"
+    ],
+    "text_down": [
+      "战斗技巧: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\温蒂_1_crop.png",
+    "text_up": [
+      "225"
+    ],
+    "text_down": [
+      "战斗技巧: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\闪击_1_crop.png",
+    "text_up": [
+      "226"
+    ],
+    "text_down": [
+      "生日: 04月02日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\杰西卡_skin3_crop.png",
+    "text_up": [
+      "227"
+    ],
+    "text_down": [
+      "上线日期: 2019.04.30"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\炎客_skin1_crop.png",
+    "text_up": [
+      "228"
+    ],
+    "text_down": [
+      "性别: 男"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\百炼嘉维尔_skin1_crop.png",
+    "text_up": [
+      "229"
+    ],
+    "text_down": [
+      "位置: 近战位"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\埃拉托_skin1_crop.png",
+    "text_up": [
+      "230"
+    ],
+    "text_down": [
+      "出生地: 米诺斯"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\蛇屠箱_1_crop.png",
+    "text_up": [
+      "231"
+    ],
+    "text_down": [
+      "源石技艺适应性: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\流星_2_crop.png",
+    "text_up": [
+      "232"
+    ],
+    "text_down": [
+      "tag: 输出 削弱"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\艾拉_skin1_crop.png",
+    "text_up": [
+      "233"
+    ],
+    "text_down": [
+      "战斗经验: 未知"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\嘉维尔_skin1_crop.png",
+    "text_up": [
+      "234"
+    ],
+    "text_down": [
+      "星级: 4"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\佩佩_1_crop.png",
+    "text_up": [
+      "235"
+    ],
+    "text_down": [
+      "感染状态: 非感染者"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\苦艾_1_crop.png",
+    "text_up": [
+      "236"
+    ],
+    "text_down": [
+      "出生地: 乌萨斯"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\深律_2_crop.png",
+    "text_up": [
+      "237"
+    ],
+    "text_down": [
+      "种族: 鲁珀"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\蜜蜡_skin2_crop.png",
+    "text_up": [
+      "238"
+    ],
+    "text_down": [
+      "位置: 远程位"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\星熊_skin2_crop.png",
+    "text_up": [
+      "239"
+    ],
+    "text_down": [
+      "战场机动: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\云迹_1_crop.png",
+    "text_up": [
+      "240"
+    ],
+    "text_down": [
+      "源石技艺适应性: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\杜林_1_crop.png",
+    "text_up": [
+      "241"
+    ],
+    "text_down": [
+      "位置: 远程位"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\帕拉斯_skin2_crop.png",
+    "text_up": [
+      "242"
+    ],
+    "text_down": [
+      "出生地: 米诺斯"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\阿_2_crop.png",
+    "text_up": [
+      "243"
+    ],
+    "text_down": [
+      "出生地: 龙门"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\艾丝黛尔_2_crop.png",
+    "text_up": [
+      "244"
+    ],
+    "text_down": [
+      "职业: 近卫"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\蓝毒_2_crop.png",
+    "text_up": [
+      "245"
+    ],
+    "text_down": [
+      "战斗技巧: 优良"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\薄绿_skin2_crop.png",
+    "text_up": [
+      "246"
+    ],
+    "text_down": [
+      "出生地: 维多利亚"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\绮良_1_crop.png",
+    "text_up": [
+      "247"
+    ],
+    "text_down": [
+      "战斗技巧: 普通"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\可颂_1_crop.png",
+    "text_up": [
+      "248"
+    ],
+    "text_down": [
+      "身高: 163cm"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\子月_2_crop.png",
+    "text_up": [
+      "249"
+    ],
+    "text_down": [
+      "生日: 10月03日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\伊芙利特_1_crop.png",
+    "text_up": [
+      "250"
+    ],
+    "text_down": [
+      "生日: 07月22日"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\杰克_2_crop.png",
+    "text_up": [
+      "251"
+    ],
+    "text_down": [
+      "物理强度: 优良"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\跃跃_skin1_crop.png",
+    "text_up": [
+      "252"
+    ],
+    "text_down": [
+      "感染状态: 感染者"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\谜图_skin1_crop.png",
+    "text_up": [
+      "253"
+    ],
+    "text_down": [
+      "tag: 费用回复 快速复活"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\赫拉格_skin1_crop.png",
+    "text_up": [
+      "254"
+    ],
+    "text_down": [
+      "感染状态: 感染者"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\酸糖_2_crop.png",
+    "text_up": [
+      "255"
+    ],
+    "text_down": [
+      "星级: 4"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\齐尔查克_2_crop.png",
+    "text_up": [
+      "256"
+    ],
+    "text_down": [
+      "上线日期: 2024.09.02"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\鞭刃_2_crop.png",
+    "text_up": [
+      "257"
+    ],
+    "text_down": [
+      "种族: 库兰塔"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\寻澜_1_crop.png",
+    "text_up": [
+      "258"
+    ],
+    "text_down": [
+      "出生地: 哥伦比亚"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\风笛_skin1_crop.png",
+    "text_up": [
+      "259"
+    ],
+    "text_down": [
+      "战术规划: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\九色鹿_skin1_crop.png",
+    "text_up": [
+      "260"
+    ],
+    "text_down": [
+      "生理耐受: 标准"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\麦哲伦_skin1_crop.png",
+    "text_up": [
+      "261"
+    ],
+    "text_down": [
+      "战斗技巧: 普通"
+    ]
+  },
+  {
+    "pic_path": "E:\\pictures\\foot_output\\格拉尼_skin1_crop.png",
+    "text_up": [
+      "262"
+    ],
+    "text_down": [
+      "物理强度: 标准"
+    ]
+  }
+]

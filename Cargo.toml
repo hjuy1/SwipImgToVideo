@@ -1,0 +1,13 @@
+[package]
+name = "to_video"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ab_glyph = { version = "0.2", default-features = false }
+image = { version = "0.25", default-features = false, features = ["png"] }
+imageproc = { version = "0.25", default-features = false }
+serde = { version = "1", default-features = false }
+serde_json = { version = "1", default-features = false, features = ["std"] }
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+structs = { path = "../structs" }
