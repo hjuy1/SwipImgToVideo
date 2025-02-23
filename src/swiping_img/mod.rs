@@ -7,13 +7,13 @@ use crate::{
     prelude::debug_print,
 };
 use ab_glyph::FontVec;
-pub use chunk::Chunk;
 use image::{DynamicImage, GenericImage, GenericImageView, Rgba};
 use std::{
     fmt::{self, Debug},
     path::{Path, PathBuf},
     process::Command,
 };
+pub use {chunk::Chunk, draw::Draw};
 
 /// 大图像处理结构体
 ///

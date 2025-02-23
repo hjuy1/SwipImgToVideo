@@ -1,4 +1,4 @@
-use super::{draw::Draw, BigImg};
+use super::{BigImg, Draw};
 use crate::{
     err_new, err_new_image,
     error::{Kind, Result},
