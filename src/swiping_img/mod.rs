@@ -398,7 +398,7 @@ pub struct BigImgBuilder<'a> {
     work_dir: PathBuf,
     chunks: &'a [Chunk],
     screen: (u32, u32),
-    pub step: u32,
+    step: u32,
     width_chunk: u32,
     text_background_color: (Rgba<u8>, Rgba<u8>),
     text_color: Rgba<u8>,
