@@ -4,11 +4,11 @@ mod draw;
 use crate::{
     err_new, err_new_image, err_new_io, err_new_tryfrom,
     error::{Kind, Result},
+    prelude::debug_print,
 };
 use ab_glyph::FontVec;
 pub use chunk::Chunk;
-use image::{DynamicImage, GenericImage, Rgba};
-#[allow(unused_imports)]
+use image::{DynamicImage, GenericImage, GenericImageView, Rgba};
 use std::{
     fmt::{self, Debug},
     path::{Path, PathBuf},
@@ -97,6 +97,75 @@ impl<'a> BigImg<'a> {
 }
 
 impl BigImg<'_> {
+    /// 组合所有图像块并生成最终视频。
+    ///
+    /// # Parameters
+    /// - `save_name`: 最终视频文件名。
+    ///
+    /// # Errors
+    /// - 如果图像处理或保存过程中发生错误，则返回 `Err`。
+    /// - 如果 `FFmpeg` 命令执行失败，则返回 `Err`。
+    ///
+    pub fn run<P: AsRef<Path>>(&self, save_name: P) -> Result<()> {
+        let chunks = self.divide();
+        let mut results = Vec::with_capacity(chunks.len() + 2);
+
+        for (index, &chunk) in chunks.iter().enumerate() {
+            let target = self.combain_chunk(chunk)?;
+            if index == 0 {
+                let cover = target.crop_imm(0, 0, self.screen.0, self.screen.1);
+                let cover_pic_name = Path::new("cover.png");
+                // 保存组合后的图像
+                cover
+                    .save(self.work_dir.join(cover_pic_name))
+                    .map_err(|e| err_new_image!(e))?;
+                debug_print(format!("{cover_pic_name:?} successed"));
+
+                let cover_video_name = cover_pic_name.with_extension("mp4");
+                self.generate_endpoint_video(
+                    cover_pic_name,
+                    &cover_video_name,
+                    self.video_cover_time,
+                )?;
+                results.push(cover_video_name);
+            }
+
+            // 保存组合后的图像
+            let mid_pic_name = format!("{index:0>2}.png");
+            let mid_pic_name = Path::new(&mid_pic_name);
+            target
+                .save(self.work_dir.join(mid_pic_name))
+                .map_err(|e| err_new_image!(e))?;
+            debug_print(format!("{mid_pic_name:?} successed"));
+
+            let mid_video_name = mid_pic_name.with_extension("mp4");
+            self.generate_mid_video(chunk.len() as u32, mid_pic_name, &mid_video_name)?;
+            results.push(mid_video_name);
+
+            if index == chunks.len() - 1 {
+                let w = target.dimensions().0;
+                let ending = target.crop_imm(w - self.screen.0, 0, self.screen.0, self.screen.1);
+                let ending_pic_name = Path::new("ending.png");
+                // 保存组合后的图像
+                ending
+                    .save(self.work_dir.join(ending_pic_name))
+                    .map_err(|e| err_new_image!(e))?;
+                debug_print(format!("{ending_pic_name:?} successed"));
+
+                let ending_video_name = ending_pic_name.with_extension("mp4");
+                self.generate_endpoint_video(
+                    ending_pic_name,
+                    &ending_video_name,
+                    self.video_ending_time,
+                )?;
+                results.push(ending_video_name);
+            }
+        }
+
+        self.combain(&mut results, save_name.as_ref())?;
+        Ok(())
+    }
+
     /// 将图像块分割成多个子块。
     ///
     /// # Results
@@ -110,20 +179,19 @@ impl BigImg<'_> {
             .collect()
     }
 
-    /// 将多个图像块组合成一个完整的图像并保存。
+    /// 将多个图像块组合成一个完整的图像。
     ///
     /// # Parameters
     /// - `chunk`: 要组合的图像块切片。
-    /// - `save_name`: 组合后的图像保存路径。
     ///
     /// # Results
-    /// 如果成功，则返回 `Ok(())`；如果失败，则返回 `Err`。
+    /// 如果成功，则返回组合后的 `DynamicImage`；如果失败，则返回 `Err`。
     ///
     /// # Errors
     /// - 如果 `chunk` 为空，则返回 `Err`。
-    /// - 如果图像处理或保存过程中发生错误，则返回 `Err`。
+    /// - 如果图像处理过程中发生错误，则返回 `Err`。
     ///
-    fn combain_chunk(&self, chunk: &[Chunk], save_name: &Path) -> Result<()> {
+    fn combain_chunk(&self, chunk: &[Chunk]) -> Result<DynamicImage> {
         if chunk.is_empty() {
             return Err(err_new!(Kind::Other, "Empty chunk"));
         }
@@ -138,38 +206,25 @@ impl BigImg<'_> {
                 .copy_from(&img, u32::try_from(i)? * self.width_chunk, 0)
                 .map_err(|e| err_new_image!(e))?;
         }
-
-        // 保存组合后的图像
-        target
-            .save(self.work_dir.join(save_name))
-            .map_err(|e| err_new_image!(e))?;
-
-        println!("{save_name:?} successed");
-        Ok(())
+        Ok(target)
     }
 
     /// 生成视频封面或结尾视频。
     ///
     /// # Parameters
-    /// - `chunk`: 要使用的图像块切片。
-    /// - `pic_name`: 生成的图片名称。
+    /// - `pic_name`: 素材图片名称。
+    /// - `video_name`: 生成视频名称。
     /// - `video_time`: 视频时长（秒）。
     ///
-    /// # Results
-    /// 如果成功，则返回生成的视频文件路径；如果失败，则返回 `Err`。
-    ///
     /// # Errors
-    /// - 如果图像处理或保存过程中发生错误，则返回 `Err`。
     /// - 如果 `FFmpeg` 命令执行失败，则返回 `Err`。
     ///
     fn generate_endpoint_video(
         &self,
-        chunk: &[Chunk],
         pic_name: &Path,
+        video_name: &Path,
         video_time: u32,
-    ) -> Result<PathBuf> {
-        let video_name = pic_name.with_extension("mp4");
-        self.combain_chunk(chunk, pic_name)?;
+    ) -> Result<()> {
         self.ffmpeg(&[
             "-r",
             "1",
@@ -189,28 +244,22 @@ impl BigImg<'_> {
             "-y",
             video_name.to_str().unwrap(),
         ])?;
-        println!("{video_name:?} successed");
-        Ok(video_name)
+        debug_print(format!("{video_name:?} successed"));
+        Ok(())
     }
 
     /// 生成中间部分的视频。
     ///
     /// # Parameters
-    /// - `chunk`: 要使用的图像块切片。
-    /// - `pic_name`: 生成的图片名称。
-    ///
-    /// # Results
-    /// 如果成功，则返回生成的视频文件路径；如果失败，则返回 `Err`。
+    /// - `len`: 素材图片中 `chunk` 数量。
+    /// - `pic_name`: 素材图片名称。
+    /// - `video_name`: 生成视频名称。
     ///
     /// # Errors
-    /// - 如果图像处理或保存过程中发生错误，则返回 `Err`。
     /// - 如果 `FFmpeg` 命令执行失败，则返回 `Err`。
     ///
-    fn generate_mid_video(&self, chunk: &[Chunk], pic_name: &Path) -> Result<PathBuf> {
-        self.combain_chunk(chunk, pic_name)?;
-        let video_name = pic_name.with_extension("mp4");
-
-        let adjust_len = u32::try_from(chunk.len())? - self.overlap;
+    fn generate_mid_video(&self, len: u32, pic_name: &Path, video_name: &Path) -> Result<()> {
+        let adjust_len = len - self.overlap;
         let run_seconds = self.video_swip_speed * adjust_len + 1;
         let speed = self.width_chunk / self.video_swip_speed;
 
@@ -233,84 +282,11 @@ impl BigImg<'_> {
             "-y",
             video_name.to_str().unwrap(),
         ])?;
-        println!("{video_name:?} successed");
-        Ok(video_name)
-    }
-
-    /// 组合所有图像块并生成最终视频。
-    ///
-    /// # Parameters
-    /// - `save_name`: 最终视频文件名。
-    ///
-    /// # Results
-    /// 如果成功，则返回 `Ok(())`；如果失败，则返回 `Err`。
-    ///
-    /// # Errors
-    /// - 如果图像处理或保存过程中发生错误，则返回 `Err`。
-    /// - 如果 `FFmpeg` 命令执行失败，则返回 `Err`。
-    ///
-    pub fn combain(&self, save_name: &str) -> Result<()> {
-        let chunks = self.divide();
-        let mut results = Vec::with_capacity(chunks.len() + 2);
-
-        let cover_pic_name = Path::new("cover.png");
-        let cover_video_name = self.generate_endpoint_video(
-            &self.chunks[..self.overlap as usize],
-            cover_pic_name,
-            self.video_cover_time,
-        )?;
-        results.push(cover_video_name);
-
-        for (index, &chunk) in chunks.iter().enumerate() {
-            let mid_pic_name = format!("{index:0>2}.png");
-            let mid_pic_name = Path::new(&mid_pic_name);
-            let mid_video_name = self.generate_mid_video(chunk, mid_pic_name)?;
-
-            results.push(mid_video_name);
-        }
-
-        let ending_pic_name = Path::new("ending.png");
-        let ending_video_name = self.generate_endpoint_video(
-            &self.chunks[(self.chunks.len() - self.overlap as usize)..],
-            ending_pic_name,
-            self.video_ending_time,
-        )?;
-        results.push(ending_video_name);
-
-        let result_str =
-            results
-                .iter()
-                .fold(String::with_capacity(results.len() * 10), |mut init, s| {
-                    init.push_str("file ");
-                    init.push_str(&s.to_string_lossy());
-                    init.push('\n');
-                    init
-                });
-
-        let list_file = self.work_dir.join("list.txt");
-        std::fs::write(&list_file, result_str)?;
-
-        self.ffmpeg(&[
-            "-f",
-            "concat",
-            "-i",
-            list_file.to_str().unwrap(),
-            "-c",
-            "copy",
-            "-y",
-            save_name,
-        ])?;
-
-        println!("{save_name} successed");
-
-        // 清理临时文件
-        for result in results {
-            let _ = std::fs::remove_file(self.work_dir.join(result));
-        }
-
+        debug_print(format!("{video_name:?} successed"));
         Ok(())
     }
 
+    #[allow(unused)]
     /// 执行带有指定参数的FFmpeg命令
     ///
     /// # Parameters
@@ -324,7 +300,6 @@ impl BigImg<'_> {
     /// - 无法执行ffmpeg命令时返回IO错误
     /// - ffmpeg进程返回非零状态码时打印stderr到控制台并返回Other类型错误
     ///
-    #[allow(unused)]
     fn ffmpeg(&self, args: &[&str]) -> Result<()> {
         let command = Command::new("ffmpeg")
             .current_dir(&self.work_dir)
@@ -336,12 +311,69 @@ impl BigImg<'_> {
         }
         Ok(())
     }
+
+    /// 合并多个文件为单个输出文件，使用ffmpeg的concat协议
+    ///
+    /// # Parameters
+    /// - `results`: 需要合并的源文件路径列表
+    /// - `save_name`: 合并后的输出文件路径
+    ///
+    /// # Errors
+    /// - 如果文件写入或 `FFmpeg` 命令执行失败，则返回 `Err`。
+    ///
+    fn combain(&self, results: &mut [PathBuf], save_name: &Path) -> Result<()> {
+        // 构建ffmpeg concat协议要求的输入文件列表字符串
+        // 格式示例：file '/path/to/file1'\nfile '/path/to/file2'
+        let result_str =
+            results
+                .iter()
+                .fold(String::with_capacity(results.len() * 20), |mut init, s| {
+                    init.push_str(&format!("file {}\n", s.to_string_lossy()));
+                    init
+                });
+
+        // 将文件列表写入临时文本文件
+        let list_file = self.work_dir.join("list.txt");
+        std::fs::write(&list_file, result_str)?;
+
+        // 调用ffmpeg执行合并操作参数说明：
+        // -f concat 指定concat分离器
+        // -i 输入文件列表
+        // -c copy 使用流拷贝模式（不重新编码）
+        // -y 覆盖输出文件
+        self.ffmpeg(&[
+            "-f",
+            "concat",
+            "-i",
+            &list_file.to_string_lossy(),
+            "-c",
+            "copy",
+            "-y",
+            &save_name.to_string_lossy(),
+        ])?;
+
+        println!("{} successed", save_name.to_string_lossy());
+
+        // 清理临时文件（包含两个步骤）：
+        // 1. 删除文件列表
+        // 2. 删除所有中间结果文件及其对应的png文件
+        let _ = std::fs::remove_file(&list_file);
+        for result in results {
+            let _ = std::fs::remove_file(self.work_dir.join(&result));
+            result.set_extension("png");
+            let _ = std::fs::remove_file(self.work_dir.join(result));
+        }
+        println!("cleanup successed");
+        Ok(())
+    }
 }
 
 impl Debug for BigImg<'_> {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         f.debug_struct("BigImg")
-            .field("datas_len", &self.chunks.len())
+            .field("work_dir", &self.work_dir)
+            .field("len_chunks", &self.chunks.len())
+            .field("chunk1", &self.chunks[0])
             .field("screen", &self.screen)
             .field("step", &self.step)
             .field("width_chunk", &self.width_chunk)
@@ -351,6 +383,13 @@ impl Debug for BigImg<'_> {
             .field("max_scale", &self.max_scale)
             .field("pic_h", &self.pic_h)
             .field("text_up_h", &self.text_up_h)
+            .field("text_down_h", &self.text_down_h)
+            .field("font", &self.font)
+            .field("video_cover_time", &self.video_cover_time)
+            .field("video_ending_time", &self.video_ending_time)
+            .field("video_background_color", &self.video_background_color)
+            .field("video_swip_speed", &self.video_swip_speed)
+            .field("video_fps", &self.video_fps)
             .finish()
     }
 }
@@ -390,7 +429,7 @@ impl<'a> BigImgBuilder<'a> {
             work_dir: work_dir.to_path_buf(),
             chunks,
             screen: (1920, 1080),
-            step: 100,
+            step: 40,
             width_chunk: 480,
             text_background_color: (Rgba([23, 150, 235, 255]), Rgba([44, 85, 153, 255])),
             text_color: Rgba([255, 255, 255, 255]),
@@ -421,6 +460,9 @@ impl<'a> BigImgBuilder<'a> {
     /// - 如果字体加载失败，则返回 `Err`。
     ///
     pub fn build(&mut self) -> Result<BigImg<'a>> {
+        if !self.work_dir.exists() {
+            return Err(err_new!(Kind::BigImgBuilderError, "work_dir is not exist"));
+        }
         if self.chunks.is_empty() {
             return Err(err_new!(Kind::BigImgBuilderError, "chunks data is empty"));
         }
@@ -480,9 +522,6 @@ impl BigImgBuilder<'_> {
     /// # Parameters
     /// - `screen`: 屏幕分辨率元组 `(宽度, 高度)`。
     ///
-    /// # Results
-    /// 返回可变引用 `&mut Self`，以便链式调用。
-    ///
     /// # Panics
     /// 如果屏幕宽高为零，则会触发断言失败。
     ///
@@ -500,9 +539,6 @@ impl BigImgBuilder<'_> {
     /// # Parameters
     /// - `step`: 步长值，必须是非零值
     ///
-    /// # Results
-    /// - 返回可变引用 `&mut Self`，以便链式调用。
-    ///
     /// # Panics
     /// - 如果 `step` 为零，程序将 panic
     ///
@@ -516,9 +552,6 @@ impl BigImgBuilder<'_> {
     ///
     /// # Parameters
     /// - `width_chunk`: 宽度块大小，必须是非零值
-    ///
-    /// # Results
-    /// - 返回可变引用 `&mut Self`，以便链式调用。
     ///
     /// # Panics
     /// - 如果 `width_chunk` 为零，程序将 panic
@@ -534,9 +567,6 @@ impl BigImgBuilder<'_> {
     /// # Parameters
     /// - `text_color`: 文本颜色，使用 `Rgba<u8>` 类型表示
     ///
-    /// # Results
-    /// - 返回可变引用 `&mut Self`，以便链式调用。
-    ///
     pub fn text_color(&mut self, text_color: Rgba<u8>) -> &mut Self {
         self.text_color = text_color;
         self
@@ -546,9 +576,6 @@ impl BigImgBuilder<'_> {
     ///
     /// # Parameters
     /// - `color`: 文本背景颜色，使用 `(Rgba<u8>, Rgba<u8>)` 类型表示
-    ///
-    /// # Results
-    /// - 返回可变引用 `&mut Self`，以便链式调用。
     ///
     pub fn text_background_color(&mut self, color: (Rgba<u8>, Rgba<u8>)) -> &mut Self {
         self.text_background_color = color;
@@ -560,9 +587,6 @@ impl BigImgBuilder<'_> {
     /// # Parameters
     /// - `max_scale`: 最大缩放比例，使用 `f32` 类型表示
     ///
-    /// # Results
-    /// - 返回可变引用 `&mut Self`，以便链式调用。
-    ///
     pub fn max_scale(&mut self, max_scale: f32) -> &mut Self {
         self.max_scale = max_scale;
         self
@@ -572,9 +596,6 @@ impl BigImgBuilder<'_> {
     ///
     /// # Parameters
     /// - `pic_h`: 图片高度，必须是非零值
-    ///
-    /// # Results
-    /// - 返回可变引用 `&mut Self`，以便链式调用。
     ///
     /// # Panics
     /// - 如果 `pic_h` 为零，程序将 panic
@@ -590,9 +611,6 @@ impl BigImgBuilder<'_> {
     /// # Parameters
     /// - `text_up_h`: 上部文本高度，必须是非零值
     ///
-    /// # Results
-    /// - 返回可变引用 `&mut Self`，以便链式调用。
-    ///
     /// # Panics
     /// - 如果 `text_up_h` 为零，程序将 panic
     ///
@@ -607,9 +625,6 @@ impl BigImgBuilder<'_> {
     /// # Parameters
     /// - `video_cover_time`: 视频封面时间，使用 `u32` 类型表示
     ///
-    /// # Results
-    /// - 返回可变引用 `&mut Self`，以便链式调用。
-    ///
     pub fn video_cover_time(&mut self, video_cover_time: u32) -> &mut Self {
         self.video_cover_time = video_cover_time;
         self
@@ -619,9 +634,6 @@ impl BigImgBuilder<'_> {
     ///
     /// # Parameters
     /// - `video_ending_time`: 视频结束时间，使用 `u32` 类型表示
-    ///
-    /// # Results
-    /// - 返回可变引用 `&mut Self`，以便链式调用。
     ///
     pub fn video_ending_time(&mut self, video_ending_time: u32) -> &mut Self {
         self.video_ending_time = video_ending_time;
@@ -633,9 +645,6 @@ impl BigImgBuilder<'_> {
     /// # Parameters
     /// - `video_background_color`: 视频背景颜色，使用 `String` 类型表示
     ///
-    /// # Results
-    /// - 返回可变引用 `&mut Self`，以便链式调用。
-    ///
     pub fn video_background_color(&mut self, video_background_color: String) -> &mut Self {
         self.video_background_color = video_background_color;
         self
@@ -645,9 +654,6 @@ impl BigImgBuilder<'_> {
     ///
     /// # Parameters
     /// - `video_swip_speed`: 视频滑动速度，使用 `u32` 类型表示
-    ///
-    /// # Results
-    /// - 返回可变引用 `&mut Self`，以便链式调用。
     ///
     pub fn video_swip_speed(&mut self, video_swip_speed: u32) -> &mut Self {
         self.video_swip_speed = video_swip_speed;
@@ -659,38 +665,8 @@ impl BigImgBuilder<'_> {
     /// # Parameters
     /// - `video_fps`: 视频帧率，使用 `u32` 类型表示
     ///
-    /// # Results
-    /// - 返回可变引用 `&mut Self`，以便链式调用。
-    ///
     pub fn video_fps(&mut self, video_fps: u32) -> &mut Self {
         self.video_fps = video_fps;
         self
-    }
-}
-
-#[cfg(test)]
-mod test {
-    use std::path::PathBuf;
-
-    use super::*;
-
-    #[test]
-    fn test_swipingimg_new_panic1() {
-        let _t: BigImg = BigImg::new(&Path::new(""), &[]);
-    }
-
-    #[test]
-    fn test_swipingimg_new_panic2() {
-        let bind = &[Chunk::new(
-            PathBuf::from("t1"),
-            vec![String::from("value")],
-            vec![String::from("456")],
-        )
-        .unwrap()];
-        let t = BigImgBuilder::new(&Path::new(""), bind).pic_h(200).build();
-        match t {
-            Ok(_) => (),
-            Err(e) => println!("{e:#?}"),
-        }
     }
 }

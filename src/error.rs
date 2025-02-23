@@ -90,6 +90,15 @@ impl From<std::num::TryFromIntError> for Error {
         }
     }
 }
+impl From<&str> for Error {
+    fn from(value: &str) -> Self {
+        Self {
+            location: None,
+            kind: Kind::Other,
+            message: value.to_string(),
+        }
+    }
+}
 
 impl Error {
     #[must_use]
